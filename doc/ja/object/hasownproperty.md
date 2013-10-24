@@ -1,6 +1,6 @@
 ## `hasOwnProperty`
 
-オブジェクトは*自分自身*と**自分以外**のどちらで定義されたプロパティかを[prototype chain](#object.prototype)のどこかでチェックしなくてはなりません。これは`Object.prototype`から継承される全てのオブジェクトの`hasOwnProperty`メソッドを使う必要があります。
+オブジェクトが持つプロパティが*自分自身*に定義されたものか、[prototype chain](#object.prototype)のどこかに定義されたものかを調べる為には、全てのオブジェクトが`Object.prototype`から継承する`hasOwnProperty`メソッドを使う必要があります。
 
 > **注意:** この方法はプロパティが`undefined`かどうかを調べるには十分では**無い**方法です。
 > プロパティは、ほとんどのオブジェクトで存在しているはずの物ではありますが、`undefined`が
